@@ -3,5 +3,10 @@
     "config:base"
   ],
   "packageRules": [
+    {
+      "description": "node: prefixes are no longer working due to https://github.com/DefinitelyTyped/DefinitelyTyped/pull/52595",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "!/(12\\.20\\.12|14\\.14\\.44|15\\.0\\.2)/"
+    }
   ]
 }
